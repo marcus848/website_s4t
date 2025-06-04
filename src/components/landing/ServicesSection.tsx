@@ -1,6 +1,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Code, ChartBar, Users, Brain, Cpu } from "lucide-react";
+import { Code, ChartBar, Users, Brain, Cpu, FileSpreadsheet, QrCode } from "lucide-react";
 
 const ServicesSection = () => {
   return (
@@ -27,28 +27,28 @@ const ServicesSection = () => {
             </CardContent>
           </Card>
 
-          {/* Data Analisys */}
+          {/* Power BI */}
           <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
             <CardContent className="pt-6">
               <div className="rounded-full bg-purple-100 p-3 w-12 h-12 flex items-center justify-center mb-4">
                 <ChartBar className="h-6 w-6 text-purple-600" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Análise de Dados</h3>
+              <h3 className="text-xl font-bold mb-2">Power BI</h3>
               <p className="text-gray-600">
-                Dashboards interativos e relatórios com Power BI e Excel para transformar dados em decisões inteligentes.
+                Dashboards interativos, conectados a diversas fontes de dados, que transformam informações em insights valiosos para decisões estratégicas.
               </p>
             </CardContent>
           </Card>
 
-          {/* VBA */}
+          {/* Excel */}
           <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
             <CardContent className="pt-6">
               <div className="rounded-full bg-purple-100 p-3 w-12 h-12 flex items-center justify-center mb-4">
-                <Cpu className="h-6 w-6 text-purple-600" />
+                <FileSpreadsheet className="h-6 w-6 text-purple-600" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Automação VBA</h3>
+              <h3 className="text-xl font-bold mb-2">Excel</h3>
               <p className="text-gray-600">
-                Soluções em Excel com formulários e automações que otimizam processos e economizam tempo no dia a dia da empresa.
+                Soluções completas em Excel com dashboards, automações e formulários personalizados que otimizam processos e aumentam a produtividade
               </p>
             </CardContent>
           </Card>
@@ -61,10 +61,38 @@ const ServicesSection = () => {
               </div>
               <h3 className="text-xl font-bold mb-2">Consultoria em IA</h3>
               <p className="text-gray-600">
-                Análise da operação e implementação de ferramentas de IA sob medida para aumentar produtividade e eficiência.
+                Analisamos seu negócio e implementamos ferramentas de IA sob medida, focando em produtividade, recução de custos e inovação.
               </p>
             </CardContent>
           </Card>
+
+          {/* Automatization */}
+          <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+            <CardContent className="pt-6">
+              <div className="rounded-full bg-purple-100 p-3 w-12 h-12 flex items-center justify-center mb-4">
+                <Cpu className="h-6 w-6 text-purple-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Automação de Processos</h3>
+              <p className="text-gray-600">
+                Digitalizamos rotinas e conectamos ferramentas com Power Automate e outras soluções Microsoft para tornar sua opeçração mais eficiente.
+              </p>
+            </CardContent>
+          </Card>
+
+          {/* Digitalization */}
+          <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+            <CardContent className="pt-6">
+              <div className="rounded-full bg-purple-100 p-3 w-12 h-12 flex items-center justify-center mb-4">
+                <QrCode className="h-6 w-6 text-purple-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Digitalização Estratégica</h3>
+              <p className="text-gray-600">
+                Avaliamos sua empresa e sugerimos as melhores tecnologias para cada área, transformando processos manuais em fluxos digitais inteligentes.
+              </p>
+            </CardContent>
+          </Card>
+
+
         </div>
       </div>
     </section>
