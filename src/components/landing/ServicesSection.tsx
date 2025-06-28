@@ -13,7 +13,7 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Web Development */}
           <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
             <CardContent className="pt-6">
@@ -33,22 +33,9 @@ const ServicesSection = () => {
               <div className="rounded-full bg-purple-100 p-3 w-12 h-12 flex items-center justify-center mb-4">
                 <ChartBar className="h-6 w-6 text-purple-600" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Power BI</h3>
+              <h3 className="text-xl font-bold mb-2">Analise de Dados</h3>
               <p className="text-gray-600">
                 Dashboards interativos, conectados a diversas fontes de dados, que transformam informações em insights valiosos para decisões estratégicas.
-              </p>
-            </CardContent>
-          </Card>
-
-          {/* Excel */}
-          <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-            <CardContent className="pt-6">
-              <div className="rounded-full bg-purple-100 p-3 w-12 h-12 flex items-center justify-center mb-4">
-                <FileSpreadsheet className="h-6 w-6 text-purple-600" />
-              </div>
-              <h3 className="text-xl font-bold mb-2">Excel</h3>
-              <p className="text-gray-600">
-                Soluções completas em Excel com dashboards, automações e formulários personalizados que otimizam processos e aumentam a produtividade
               </p>
             </CardContent>
           </Card>
@@ -78,21 +65,6 @@ const ServicesSection = () => {
               </p>
             </CardContent>
           </Card>
-
-          {/* Digitalization */}
-          <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-            <CardContent className="pt-6">
-              <div className="rounded-full bg-purple-100 p-3 w-12 h-12 flex items-center justify-center mb-4">
-                <QrCode className="h-6 w-6 text-purple-600" />
-              </div>
-              <h3 className="text-xl font-bold mb-2">Digitalização Estratégica</h3>
-              <p className="text-gray-600">
-                Avaliamos sua empresa e sugerimos as melhores tecnologias para cada área, transformando processos manuais em fluxos digitais inteligentes.
-              </p>
-            </CardContent>
-          </Card>
-
-
         </div>
       </div>
     </section>
