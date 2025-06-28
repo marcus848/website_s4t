@@ -8,6 +8,7 @@ import TestimonialsSection from "@/components/landing/TestimonialsSection";
 import ContactSection from "@/components/landing/ContactSection";
 import FooterSection from "@/components/landing/FooterSection";
 import DataSection from "@/components/landing/DataAnalysisSection";
+import WebSection from "@/components/landing/WebSection";
 
 const LandingPage = () => {
   return (
@@ -20,6 +21,9 @@ const LandingPage = () => {
 
       {/* Data Analysis Section */}
       <DataSection />
+
+      {/* Data Analysis Section */}
+      <WebSection />
 
       {/* Services Section */}
       <ServicesSection />

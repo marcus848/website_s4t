@@ -1,11 +1,11 @@
 import React, { useState, useRef } from 'react';
 
 type Props = {
-    backImage: string;
-    frontImage: string;
+    afterImage: string;
+    beforeImage: string;
 };
 
-export default function SwapImage({ backImage, frontImage }: Props) {
+export default function SwapImage({ afterImage, beforeImage }: Props) {
     const [divider, setDivider] = useState(50);
     const containerRef = useRef(null);
 
@@ -26,10 +26,10 @@ export default function SwapImage({ backImage, frontImage }: Props) {
             className="relative overflow-hidden cursor-ew-resize rounded-lg shadow-lg"
         >
             {/* Imagem de fundo (antes - Excel) */}
-            <img src={backImage} alt="Antes - Planilha Excel" className="w-full object-cover" />
+            <img src={afterImage} alt="Antes - Planilha Excel" className="w-full object-cover" />
             {/* Imagem do topo (depois - Power BI), com largura variável */}
             <img
-                src={frontImage}
+                src={beforeImage}
                 alt="Depois - Dashboard Power BI"
                 className="absolute top-0 left-0 object-cover h-full w-full"
                 style={{ clipPath: `inset(0 ${100 - divider}% 0 0)` }}
@@ -37,7 +37,7 @@ export default function SwapImage({ backImage, frontImage }: Props) {
             {/* Linha divisória visual (opcional): */}
             <div
                 className="absolute top-0"
-                style={{ left: `${divider}%`, height: '100%', width: '3px', background: '#F3E8FF' }}
+                style={{ left: `${divider}%`, height: '100%', width: '3px', background: '#6B21A8' }}
             ></div>
         </div>
     )
