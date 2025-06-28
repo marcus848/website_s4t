@@ -23,6 +23,7 @@ export default function SwapImage({ afterImage, beforeImage }: Props) {
         <div
             ref={containerRef}
             onMouseMove={handleMouseMove}
+            onTouchMove={handleMouseMove}
             className="relative overflow-hidden cursor-ew-resize rounded-lg shadow-lg"
         >
             {/* Imagem de fundo (antes - Excel) */}
